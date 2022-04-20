@@ -1,0 +1,11 @@
+*.o
+
+*.exe
+
+*.obj
+
+longest_string.exe
+
+longest_string
+
+longest_string.obj
