@@ -4,11 +4,12 @@
 
 int main(int argc, char* argv[])
 {
-	
-	//printf("This program has %d command line arguments:\n",argc);
+	// variable declaratins
 	int size = 0;
 	int temp = 1;
 	int longest = 0;
+
+	// code
 	for (int i = 1; i < argc; ++i)
 	{
 		size = strlen(argv[i]);
@@ -19,7 +20,7 @@ int main(int argc, char* argv[])
 		}
 	}
 	if(argv[temp]!=NULL)
-	printf("\n%s\n", argv[temp]);
+	puts(argv[temp]);
 
-	return (0);
+	return EXIT_SUCCESS;
 }
