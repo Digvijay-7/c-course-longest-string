@@ -19,8 +19,10 @@ int main(int argc, char* argv[])
 			temp = i;
 		}
 	}
-	if(argv[temp]!=NULL)
-	puts(argv[temp]);
+	if (argv[temp] == NULL)
+		puts(" ");
+	if (argv[temp] != NULL)
+		puts(argv[temp]);
 
 	return EXIT_SUCCESS;
 }
