@@ -8,7 +8,7 @@ int main(int argc, char* argv[])
 	int size = 0;
 	int temp = 1;
 	int longest = 0;
-
+	int j = 0;
 	// code
 	for (int i = 1; i < argc; ++i)
 	{
@@ -17,12 +17,17 @@ int main(int argc, char* argv[])
 		{
 			longest = size;
 			temp = i;
+			j = 1;
 		}
 	}
-	if (argv[temp] == NULL)
-		puts(" ");
-	if (argv[temp] != NULL)
+	switch (j)
+	{
+	case 1:
 		puts(argv[temp]);
-
+		break;
+	default:
+		printf("\n");
+		break;
+	}
 	return EXIT_SUCCESS;
 }
