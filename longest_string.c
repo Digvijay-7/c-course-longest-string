@@ -2,25 +2,18 @@
 #include <stdlib.h>
 #include <string.h>
 
-int main(int argc, char* argv[])
+int main(int argc, char** argv)
 {
-	// variable declaratins	
-	int temp = 1;	
-	int longest = 0;
+	char* maxlength = "";
 	// code
-	if (argc == 1)
-	{
-		puts("");
-	}
 	for (int i = 1; i < argc; ++i)
 	{
 		int size = strlen(argv[i]);
-		if (longest < size)
+		if (strlen(argv[i]) > strlen(maxlength))
 		{
-			longest = size;
-			temp = i;
+			maxlength = argv[i];
 		}
 	}
-	puts(argv[temp]);
+	puts(maxlength);
 	return EXIT_SUCCESS;
 }
