@@ -5,7 +5,6 @@
 int main(int argc, char** argv)
 {
 	char* maxlength = "";
-	// code
 	for (int i = 1; i < argc; ++i)
 	{
 		int size = strlen(argv[i]);
